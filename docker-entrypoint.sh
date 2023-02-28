@@ -3,7 +3,7 @@ if [ -z "$PSK" ]; then
   PSK=`hexdump -n 16 -e '4/4 "%08x" 1 "\n"' /dev/urandom`
 fi
 mkdir /config
-if [ ! -f "/config/snell.conf" ]; then
+if [ ! -f "/config/snell-server.conf" ]; then
   cat > /config/snell.conf <<EOF
 [snell-server]
 listen = ::0:7800
