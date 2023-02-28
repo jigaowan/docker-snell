@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z "$PSK" ]; then
-  PSK=`hexdump -n 16 -e '4/4 "%08x" 1 "\n"' /dev/urandom`
+  PSK=`tr -dc A-Za-z0-9 </dev/urandom | head -c 32 ; echo ''`
 fi
 mkdir /config
 if [ ! -f "/config/snell-server.conf" ]; then
