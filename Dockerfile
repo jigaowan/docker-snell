@@ -1,4 +1,4 @@
-FROM debian:latest-slim
+FROM debian:stable-slim
 
 ENV PSK=
 
