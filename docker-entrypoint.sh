@@ -4,7 +4,7 @@ if [ -z "$PSK" ]; then
 fi
 mkdir /config
 if [ ! -f "/config/snell-server.conf" ]; then
-  cat > /config/snell.conf <<EOF
+  cat > /config/snell-server.conf <<EOF
 [snell-server]
 listen = ::0:7800
 psk = ${PSK}
