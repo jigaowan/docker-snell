@@ -1,0 +1,7 @@
+version: "2.1"
+services:
+  snell:
+    image: ghcr.io/jigaowan/docker-snell:main
+    container_name: snell
+    ports:
+      - snell_port:7800

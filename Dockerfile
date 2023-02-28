@@ -1,6 +1,5 @@
 FROM debian:latest-slim
 
-ENV PORT=
 ENV PSK=
 
 COPY snell-server /usr/local/bin/
